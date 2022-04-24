@@ -1,0 +1,490 @@
+@import "./login.scss";
+
+$main-color: #0bc1c4;
+$header-color: #22f8fc;
+$gold-color: #dbb000;
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+@font-face {
+    font-family: "cairo";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    color: black;
+}
+
+.btn {
+    background-color: $main-color;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-right: 40px;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: $header-color;
+        color: white;
+    }
+}
+
+.modal-backdrop {
+    z-index: 1000;
+}
+
+.carousel-control-prev {
+    z-index: 88;
+    span {
+        transform: rotate(44deg);
+        font-size: 30px;
+        
+        color: $header-color;
+    }
+}
+
+.carousel-control-next {
+    z-index: 88;
+    span {
+        transform: rotate(224deg);
+        font-size: 30px;
+        z-index: 10000;
+        color: $header-color;
+    }
+}
+
+
+body{
+    font-family: "cairo", 'Cabria, Cochin, Georgia, Times, Times New Roman, serif' !important;
+    text-align: right;
+}
+
+nav {
+    background-color: #eeeaea;
+    border-bottom: 3px $main-color solid;
+
+    a {
+        text-decoration: none !important;
+        span {
+            font-size: 35px;
+            color: $main-color ;
+            font-weight: 600;
+            padding-top: 3px; 
+        }
+    }
+
+    img {
+        height: 75px;
+        width: 75px;
+    }
+    ul {
+
+        margin-right: auto;
+
+        .active {
+            background-color: #eeeaea;
+            color: $main-color !important;
+            border-bottom: 1px solid $main-color;
+            font-weight: bold;
+        }
+
+        li {
+            
+            margin-right: 20px;
+            a {
+            transition: all 0.5s ease;
+            font-size: 20px;
+            color: #000000 !important ;
+            font-weight: 100;
+
+            &:hover {
+            color: $main-color !important;
+            }
+            }
+        }
+        
+    }
+
+    .modal {
+        .modal-title {
+            font-weight: bold;
+        }
+        .modal-footer {
+            a {
+                color: $main-color;
+            }
+        }
+
+        .form-group {
+            input {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+.carousel {
+   
+
+    .carousel-inner {
+        margin-top: 25px;
+    }
+
+    .carousel {
+        .carousel-item {
+            img {
+                height: 450px;
+                width: 90%;
+            }
+
+            .overlay {
+                position: absolute;
+                background-color: rgba(65, 155, 155, .5);
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                display: flex !important;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+            }
+        }
+
+        .carousel-caption {
+            margin-top: 50px;
+            h1 {
+                font-weight: bold;
+                color: $header-color;
+                margin-bottom: 50px;
+            }
+
+            h4 {
+                width: 60%;
+                color: white;
+            }
+        }
+
+        .carousel-indicators {
+            margin-right: 11.5%;
+            li {
+                height: 7px;
+                width: 25px;
+                
+                margin: 20px 5px 0px 0px;
+
+                &.active {
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+    
+}
+
+.activities {
+    .card {
+        margin-top: 25px;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 50px;
+        background-color: #eeeaea;
+        border: 1px solid $main-color;
+        border-radius: 10px;
+        width: 70%;
+        height: 270px;
+        transition: all 1s ease-in-out;
+        box-shadow: 0px 2px 4px #d2d2d2;
+        .card-body {
+            h5 {
+                font-size: 20px;
+                color: black;
+                font-weight: bold;
+            }
+            p {
+                font-size: 15px;
+                opacity: 0;
+                transition: ease 2s all;
+            }
+        }
+        &:hover {
+            height: 370px;
+            p {
+                opacity: 1;
+            }
+            span {
+                background-color: $header-color;
+            }
+        }
+        span {
+            font-size: 40px;
+            color: black;
+            background-color: $main-color;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+        }
+
+    }
+}
+
+.students {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    h2 {
+        color: white;
+    }
+    background-color: #393939;
+    .carousel-inner {
+        .card {
+            width: 70%;
+            border-radius: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: rgb(238, 234, 234);
+            position: relative;
+            z-index: 77;
+            &::before {
+                content: "";
+                position: absolute;
+                right: -0.9px;
+                bottom: -0.5px;
+                background-color: $main-color;
+                height: 100%;
+                width: 100%;
+                border-radius: 200% 5% 60% 5%;
+                z-index: -9;
+                
+            }
+            .card-footer {
+                background-color: white;
+            }
+            img {
+                border-radius: 50% 70% 70% 80%;
+                width: 40%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                z-index: 5;
+            }
+            h5.card-title {
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                z-index: 6000;
+            }
+        }
+    }
+}
+
+.top-students {
+    .card {
+        width: 70%;
+        border-radius: 10px;
+        margin-right: auto;
+        margin-bottom: 5px;
+        background-color: rgb(238, 234, 234);
+        position: relative;
+        z-index: 77;
+        &::before {
+            content: "";
+            position: absolute;
+            right: -0.9px;
+            bottom: -0.5px;
+            background-color: $gold-color;
+            height: 100%;
+            width: 100%;
+            border-radius: 200% 5% 60% 5%;
+            z-index: -9;
+            
+        }
+        img {
+            border-radius: 50% 70% 70% 80%;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            z-index: 5;
+        }
+        h5.card-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            z-index: 6000;
+        }
+    }
+    .btn {
+        margin-left: 55px;
+        margin-right: 55px;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        background-color: #eeeaea;
+        color: $gold-color;
+
+        &:hover {
+            background-color: #ffffff;
+        }
+    }
+}
+
+.contact {
+    h2 {
+        color: $main-color;
+    }
+    background-color: #393939;
+    padding-bottom: 30px;
+    .info {
+        span {
+            color: $main-color;
+            font-size: 18px;
+            line-height: 50px;
+        }
+        p {
+            color: #eeeeee;
+            font-size: 14px;
+        }
+    }
+}
+
+footer {
+    background-color: #191919;
+    p {
+        font-size: 15px;
+        padding: 25px 0;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+}
+
+
+@media(max-width: 1400px) {
+    .students {
+        .card {
+
+            h5 {
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .activities {
+        .card {
+            padding-left: 25px;
+            padding-right: 25px;
+            &:hover {
+                height: 390px;
+            }
+    
+        }
+    }
+
+    .students {
+        .card {
+            img {
+                width: 60% !important;
+            }
+
+            h5 {
+                font-size: 12px !important;
+            }
+        }
+    }
+    
+}
+@media(max-width: 992px) {
+    li {
+        a {
+        width: 80%;
+        }
+    }
+
+    .carousel-inner {
+        h1 {
+            font-size: 2.0rem;
+        }
+        h4 {
+            font-size: 1.3rem;
+        }
+    }
+
+    .activities {
+        .card {
+            margin-top: 50px;
+            padding: 30px;
+            width: 80%;        
+            height: 310px !important;
+            p {
+                opacity: 1 !important;
+            }
+    
+        }
+    }
+
+    .btn {
+        margin-right: -75px;
+    }
+
+    .students {
+        .card{
+            margin-bottom: 5px;
+            img {
+                width: 60% !important;
+            }
+
+            h5 {
+                font-size: 14px !important;
+                margin-right: 10px;
+            }
+
+        }
+    }
+
+    .top-students {
+        .card {
+            margin-left: auto;
+        }
+    }
+
+    .top-students {
+        .btn {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 10px;
+
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .activities {
+        .card {       
+            height: 350px !important;
+    
+        }
+    }
+
+    .btn {
+        margin-right: -35px;
+    }
+}

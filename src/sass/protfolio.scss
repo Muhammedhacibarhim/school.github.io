@@ -1,0 +1,167 @@
+.protfolio {
+    .top {
+        background-color: $gold-color !important;
+        margin: 70px 0;
+    }
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 20px;
+        border: 2px solid $main-color;
+        transform: translate(0px, 70px);
+        background-color: #eeeaea !important;
+        position: relative;
+        img {
+            border-radius: 0px 20px 20px 200px;
+            height: 100%;
+            border: 1px solid $main-color;
+            
+        }
+        .card-body {
+            h5 {
+                font-size: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                color: $main-color;
+                font-weight: bold;
+                span {
+                    color: $gold-color;
+                    font-weight: 500;
+                }
+
+            }
+        }
+        .row {
+            justify-content: center;
+        }
+
+    }
+
+    .grades {
+        margin-top: 100px;
+
+        .skill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 20px;
+            h5 {
+                display: inline;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .a {
+            width: 100%;
+            background-color: #eeeaea;
+            height: 20px;
+            margin-bottom: 35px;
+            .b {
+                background-color: $gold-color;
+            }
+        }
+
+    }
+
+    .accordion {
+        .card {
+            border: none;
+            border-radius: 0px;
+            margin-bottom: 10px;
+            background-color: transparent;
+            .btn {
+                background-color: transparent;
+            }
+        }
+
+        .accordion-item {
+            margin-bottom: 25px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 0;
+            border-radius: 0;
+        }
+    }
+}
+
+
+
+
+@media(max-width: 992px) {
+    .protfolio {
+        .card {
+            .card-body {
+                h5 {
+                    font-size: 15px;
+                }
+            }
+    
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .protfolio {
+        .col-md-8 {
+            padding: 0 !important;
+        }
+        .card {
+            width: 400px;
+            img {
+                border-radius: 20px 20px 0px 0px !important;
+                height: 100%;
+                
+            }
+            .card-body {
+                padding: 0 !important;
+            }
+    
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .protfolio {
+        .col-md-8 {
+            padding: 0 !important;
+        }
+        .card {
+            width: 400px;
+                       img {
+                border-radius: 20px 20px 0px 0px !important;
+                height: 100%;
+                
+            }
+                
+            .card-body {
+                padding: 0 !important;
+                h5 {
+                    font-size: 13px;
+                }
+            }
+    
+        }
+    }
+}
+
+@media(max-width: 300px) {
+    .col-md-8 {
+        padding: 0 !important;
+    }
+    .protfolio {
+        .col-md-8 {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .card {
+                
+            .card-body {
+                padding: 0 !important;
+                h5 {
+                    font-size: 13px;
+                }
+            }
+    
+        }
+    }
+}

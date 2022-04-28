@@ -93,6 +93,10 @@ module.exports = {
       template: './src/login.html',
       filename: 'login.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/portfolio.html',
+      filename: 'portfolio.html'
+    }),
     
     
     new MiniCssExtractPlugin({filename: "css/main.css"}),

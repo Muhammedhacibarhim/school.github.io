@@ -1,8 +1,10 @@
 @import "./login.scss";
+@import "./protfolio.scss";
 
 $main-color: #0bc1c4;
 $header-color: #22f8fc;
 $gold-color: #dbb000;
+
 
 .row {
     margin-left: 0;
@@ -479,12 +481,24 @@ footer {
 @media(max-width: 575px) {
     .activities {
         .card {       
-            height: 350px !important;
+            height: 390px !important;
     
+        }
+
+        .card-body {
+            padding: 0;
         }
     }
 
     .btn {
         margin-right: -35px;
+    }
+
+    .top-students {
+        .btn {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
     }
 }

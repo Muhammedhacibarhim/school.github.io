@@ -10378,6 +10378,9 @@ a.text-dark:focus, a.text-dark:hover {
 /*!**************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
   \**************************************************************************************************************/
+.navbar {
+  margin-bottom: 5px;
+}
 .navbar .container {
   justify-content: space-around;
 }
@@ -10386,6 +10389,188 @@ a.text-dark:focus, a.text-dark:hover {
   margin-top: 94px !important;
 }
 
+section.form {
+  padding-bottom: 30px;
+  background-color: #393939;
+}
+section.form h2 {
+  padding-top: 60px;
+  padding-bottom: 0;
+  margin-bottom: 50px;
+  color: #0bc1c4;
+}
+section.form label {
+  color: #0bc1c4;
+  font-size: 18px;
+  font-weight: bold !important;
+  margin-bottom: 5px;
+}
+section.form input {
+  height: 30px;
+  margin-bottom: 10px;
+}
+section.form .btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+section.form .line {
+  background-color: #0bc1c4;
+  width: 70%;
+}
+section.form .form-btn {
+  text-align: center;
+}
+section.form .form-btn .tow {
+  color: #0bc1c4 !important;
+  text-decoration: none;
+}
+
+#v-card-holder #v-card {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  -webkit-transition: height 1s, color 1s, margin 1s;
+  transition: height 1s, color 1s, margin 1s;
+  z-index: 1;
+  background: #06A763;
+  margin: -33px 3px 0 0;
+}
+
+@media (max-width: 767px) {
+  section.form label {
+    font-size: 15px;
+  }
+  section.form input {
+    height: 25px;
+  }
+}
+.protfolio .top {
+  background-color: #dbb000 !important;
+  margin: 70px 0;
+}
+.protfolio .card {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+  border: 2px solid #0bc1c4;
+  transform: translate(0px, 70px);
+  background-color: #eeeaea !important;
+  position: relative;
+}
+.protfolio .card img {
+  border-radius: 0px 20px 20px 200px;
+  height: 100%;
+  border: 1px solid #0bc1c4;
+}
+.protfolio .card .card-body h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #0bc1c4;
+  font-weight: bold;
+}
+.protfolio .card .card-body h5 span {
+  color: #dbb000;
+  font-weight: 500;
+}
+.protfolio .card .row {
+  justify-content: center;
+}
+.protfolio .grades {
+  margin-top: 100px;
+}
+.protfolio .grades .skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+}
+.protfolio .grades .skill h5 {
+  display: inline;
+  font-weight: bold;
+  font-size: 20px;
+}
+.protfolio .grades .a {
+  width: 100%;
+  background-color: #eeeaea;
+  height: 20px;
+  margin-bottom: 35px;
+}
+.protfolio .grades .a .b {
+  background-color: #dbb000;
+}
+.protfolio .accordion .card {
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+.protfolio .accordion .card .btn {
+  background-color: transparent;
+}
+.protfolio .accordion .accordion-item {
+  margin-bottom: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 992px) {
+  .protfolio .card .card-body h5 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .protfolio .col-md-8 {
+    padding: 0 !important;
+  }
+  .protfolio .card {
+    width: 400px;
+  }
+  .protfolio .card img {
+    border-radius: 20px 20px 0px 0px !important;
+    height: 100%;
+  }
+  .protfolio .card .card-body {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 400px) {
+  .protfolio .col-md-8 {
+    padding: 0 !important;
+  }
+  .protfolio .card {
+    width: 400px;
+  }
+  .protfolio .card img {
+    border-radius: 20px 20px 0px 0px !important;
+    height: 100%;
+  }
+  .protfolio .card .card-body {
+    padding: 0 !important;
+  }
+  .protfolio .card .card-body h5 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 300px) {
+  .col-md-8 {
+    padding: 0 !important;
+  }
+
+  .protfolio .col-md-8 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .protfolio .card .card-body {
+    padding: 0 !important;
+  }
+  .protfolio .card .card-body h5 {
+    font-size: 13px;
+  }
+}
 .row {
   margin-left: 0;
   margin-right: 0;
@@ -10778,10 +10963,18 @@ footer p {
 }
 @media (max-width: 575px) {
   .activities .card {
-    height: 350px !important;
+    height: 390px !important;
+  }
+  .activities .card-body {
+    padding: 0;
   }
 
   .btn {
     margin-right: -35px;
+  }
+
+  .top-students .btn {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

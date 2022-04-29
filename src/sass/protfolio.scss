@@ -1,20 +1,24 @@
+$p-main-color: #0bc1c4;
+$p-header-color: #22f8fc;
+$p-gold-color: #dbb000;
+
 .protfolio {
     .top {
-        background-color: $gold-color !important;
+        background-color: $p-gold-color !important;
         margin: 70px 0;
     }
     .card {
         margin-right: auto;
         margin-left: auto;
         border-radius: 20px;
-        border: 2px solid $main-color;
+        border: 2px solid $p-main-color;
         transform: translate(0px, 70px);
         background-color: #eeeaea !important;
         position: relative;
         img {
             border-radius: 0px 20px 20px 200px;
             height: 100%;
-            border: 1px solid $main-color;
+            border: 1px solid $p-main-color;
             
         }
         .card-body {
@@ -22,10 +26,10 @@
                 font-size: 20px;
                 margin-bottom: 20px;
                 margin-top: 20px;
-                color: $main-color;
+                color: $p-main-color;
                 font-weight: bold;
                 span {
-                    color: $gold-color;
+                    color: $p-gold-color;
                     font-weight: 500;
                 }
 
@@ -58,31 +62,75 @@
             height: 20px;
             margin-bottom: 35px;
             .b {
-                background-color: $gold-color;
+                background-color: $p-gold-color;
             }
         }
 
     }
 
-    .accordion {
-        .card {
-            border: none;
-            border-radius: 0px;
-            margin-bottom: 10px;
-            background-color: transparent;
-            .btn {
-                background-color: transparent;
+    section.tips {
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 70px 0;
+            .tips-title {
+                h2 {
+                    font-size: 30px;
+                    color: $p-main-color;
+                    margin-bottom: 60px;
+                }
             }
-        }
 
-        .accordion-item {
-            margin-bottom: 25px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border: 0;
-            border-radius: 0;
+            .accordion {
+                .accordion-body {
+                    p {
+                        font-size: 15px;
+                        line-height: 20px;
+                        color: #c9c9c9;
+                    }
+                }
+                .accordion-item {
+                    margin-bottom: 25px;
+                    background-color: #393939;
+                    border: 0;
+                    border-radius: 0;
+
+                    .accordion-header {
+                        button {
+                            background-color: transparent;
+                            font-size: 18px;
+                            color: #fff;
+                            border-bottom: 0;
+                            &::after {
+                                content: none;
+                            }
+                            &:focus {
+                                border-color: transparent;
+                                box-shadow: 0 0 0 0;
+                            }
+                            svg {
+                                margin-right: auto;
+                                transition: all 0.5s ease;
+                                color: #fff;
+                            }
+                            span {
+                                color: $p-header-color;
+                                font-weight: 600;
+                                font-size: 15px;
+                            }
+                        }
+                        button.collapsed {
+                            svg {
+                                transform: rotate(180deg) !important;
+                            }
+                        }
+                    }
+                }
+            }
+    
         }
     }
 }
+
 
 
 

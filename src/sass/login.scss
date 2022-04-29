@@ -1,6 +1,5 @@
-$main-color: #0bc1c4;
-$header-color: #22f8fc;
-$gold-color: #dbb000;
+$l-main-color: #0bc1c4;
+$l-header-color: #22f8fc;
 
 .navbar {
     .container {
@@ -19,11 +18,11 @@ section.form {
         padding-top: 60px;
         padding-bottom: 0;
         margin-bottom: 50px;
-        color: $main-color;
+        color: $l-main-color;
     }
     background-color: #393939;
     label {
-        color: $main-color;
+        color: $l-main-color;
         font-size: 18px;
         font-weight: bold !important;
         margin-bottom: 5px;
@@ -40,33 +39,24 @@ section.form {
     }
 
     .line {
-        background-color: $main-color;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: $l-main-color;
         width: 70%;
+        
     }
 
     .form-btn {
         text-align: center;
 
         .tow {
-            color: $main-color !important;
+            color: $l-main-color !important;
             text-decoration: none;
         }
     }
 
 }
 
-
-#v-card-holder #v-card {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    -webkit-transition: height 1s, color 1s, margin 1s;
-    transition: height 1s, color 1s, margin 1s;
-    z-index: 1;
-    background: #06A763;
-    margin: -33px 3px 0 0;
-}
 
 
 @media(max-width: 767px) {

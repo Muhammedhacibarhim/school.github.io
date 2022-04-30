@@ -21468,6 +21468,7 @@ textarea.form-control-lg {
 
 section.form {
   padding-bottom: 30px;
+  min-height: 600px;
   background-color: #393939;
 }
 section.form h2 {

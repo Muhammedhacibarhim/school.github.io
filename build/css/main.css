@@ -21461,9 +21461,6 @@ textarea.form-control-lg {
 .navbar {
   margin-bottom: 5px;
 }
-.navbar .container {
-  justify-content: space-around;
-}
 
 .contact {
   margin-top: 94px !important;
@@ -21573,12 +21570,13 @@ section.form .form-btn .tow {
 }
 .protfolio section.tips .overlay {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 70px 0;
+  padding: 5px 0;
 }
 .protfolio section.tips .overlay .tips-title h2 {
   font-size: 30px;
   color: #0bc1c4;
   margin-bottom: 60px;
+  margin-top: 20px;
 }
 .protfolio section.tips .overlay .accordion .accordion-body p {
   font-size: 15px;
@@ -21746,8 +21744,8 @@ nav a span {
   padding-top: 3px;
 }
 nav img {
-  height: 75px;
-  width: 75px;
+  height: 70px;
+  width: 70px;
 }
 nav ul {
   margin-right: auto;
@@ -21755,17 +21753,15 @@ nav ul {
 nav ul .active {
   background-color: #eeeaea;
   color: #0bc1c4 !important;
-  border-bottom: 1px solid #0bc1c4;
   font-weight: bold;
 }
 nav ul li {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 nav ul li a {
   transition: all 0.5s ease;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000 !important;
-  font-weight: 100;
 }
 nav ul li a:hover {
   color: #0bc1c4 !important;

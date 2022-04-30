@@ -71,12 +71,13 @@ $p-gold-color: #dbb000;
     section.tips {
         .overlay {
             background-color: rgba(0, 0, 0, 0.7);
-            padding: 70px 0;
+            padding: 5px 0;
             .tips-title {
                 h2 {
                     font-size: 30px;
                     color: $p-main-color;
                     margin-bottom: 60px;
+                    margin-top: 20px;
                 }
             }
 
